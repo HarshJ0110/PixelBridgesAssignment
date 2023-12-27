@@ -1,13 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.dashboard {
+  background-image: linear-gradient(-60deg, rgba(35, 73, 155, 1.000), rgba(17, 21, 31, 1.000), rgba(17, 21, 31, 1.000), rgba(17, 21, 31, 1.000), rgba(105, 137, 207, 1.000));
 }
+
+.lexstake {
+  background-image: radial-gradient(circle at left bottom, rgba(17, 21, 31, 1.000), rgba(17, 21, 31, 1.000), rgba(75, 73, 155, 1.000), rgb(150, 150, 168));
+}
+
+.slider {
+  transform: translate(100%);
+  transition: transform 0.4s ease;
+}
+
+.slider1 {
+  transform: translate(0%);
+  transition: transform 0.4s ease;
+}
+
+.slider2 {
+  transform: translate(0%);
+  transition: transform 0.4s ease;
+}
+
+li{
+  list-style-type: none;
+  margin: 0 2vw 0 2vw;
+  font-weight: 500;
+  font-size: large;
+}
+
+.active{
+  color: blue;
+}
+
+
+
