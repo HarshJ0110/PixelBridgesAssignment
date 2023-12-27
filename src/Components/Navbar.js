@@ -47,7 +47,7 @@ const Navbar = () => {
                 </li>
 
             </ul>
-            {click && <div className='absolute z-10 w-[50vw] h-full bg-black bg-opacity-80 translate-x-0 transition-all'><ul className=' flex flex-col'>
+            {click && <div className='absolute z-10 w-[50vw] h-full bg-black bg-opacity-100 translate-x-0 transition-all'><ul className=' flex flex-col'>
                 <i class="fa-regular fa-circle-xmark mt-5 text-2xl mx-[40vw]" onClick={handleClick}></i>
                 <li className={`${location.pathname === '/dashboard' ? "text-blue-600 m-5 mt-10 mx-10" : "hover:text-blue-500 m-5 mt-10 mx-10"}`}>
                     <Link to='/dashboard'>Dashboard</Link>
