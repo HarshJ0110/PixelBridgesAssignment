@@ -15,7 +15,7 @@ const Navbar = () => {
 
             <ul className='flex xl:justify-around p-4 text-lg'>
                 <button onClick={handleClick}><i className="fa-solid fa-bars xl:hidden m-1"></i></button>
-                <li className='hover:text-blue-700 mt-3 mb-4 xl:mb-0'>
+                <li className='hover:text-blue-700 mt-1'>
                     <img src="https://app.lexer.markets/assets/logo_LEXER-80aa9bef.svg" height="80px" width="80px" alt="LEXER" />
                 </li>
                 <li className={`${location.pathname === '/dashboard' ? "text-blue-600 xl:inline hidden" : "hover:text-blue-500 xl:inline hidden"}`}>
