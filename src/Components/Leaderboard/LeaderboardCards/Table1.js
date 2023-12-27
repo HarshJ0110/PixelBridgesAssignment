@@ -33,7 +33,7 @@ const Table1 = () => {
 
     return (
         <div className='flex flex-col w-[90vw] bg-slate-700 rounded-3xl my-8 bg-opacity-40'>
-            <div className='w-[90vw] flex justify-around'>
+            <div className='w-[80vw] flex justify-around'>
                 <p className='my-5 w-[2vw] xl:inline hidden text-lg text-gray-300'>RANK</p>
                 <p className='my-5 w-[2vw] xl:inline hidden text-lg text-gray-300'>Name</p>
                 <p className='my-5 w-[2vw] text-lg text-gray-300'>Symbol</p>
@@ -45,7 +45,7 @@ const Table1 = () => {
             {trending == "0" ? <Loader /> : trending.map((coin, index) => {
                 let profit = coin.price_change_percentage_24h >= 0;
                 return (
-                    <div className='w-[90vw] flex justify-around' key={index}>
+                    <div className='w-[80vw] xl:w-[90vw] flex justify-around' key={index}>
                         <p className='my-10 w-[2vw] text-xl xl:inline hidden text-gray-400'>{index + 1}</p>
                         <p className='my-10 w-[2vw] text-xl xl:inline hidden text-gray-400'>{coin?.id}</p>
                         <p className='my-10 w-[2vw] text-lg text-gray-400'>{coin?.symbol}&nbsp;</p>
