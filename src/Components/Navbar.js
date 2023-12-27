@@ -41,7 +41,7 @@ const Navbar = () => {
                 </li>
             </ul>
             <ul>
-                <li className='font-thin border border-3 rounded-2xl mt-4 xl:m-2 p-2 px-4'>
+                <li className='font-thin border border-3 rounded-2xl mt-2 xl:m-2 p-2 px-4'>
                     <i className="fa-solid fa-wallet pr-3"></i>
                     Connect Wallet
                 </li>
